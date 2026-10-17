@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,33 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="bg-emerald-800 bg-fixed">
+<body class="bg-emerald-800 bg-fixed ">
     <div id="hero">
-        <div class="h-screen flex justify-center items-center flex-col">
-            <div class="" >
-                <h1 class="text-amber-200 font-cinzel font-bold  text-5xl max-md:text-2xl">HI THERE! my name is Zhafran</h1>
-                <p class="text-orange-300 text-3xl font-inter font-bold max-md:text-xl" id="papper"></p>
+        <div class="h-screen flex justify-center items-center flex-col ">
+            <div class="w-[40%] max-md:w-full max-md:ml-12 hero-fade fixed" id="fixed">
+                <h1 class="text-amber-200 font-cinzel font-bold  text-5xl max-md:text-3xl">HI THERE! my name is Zhafran
+                </h1>
+                <p class="text-orange-300 text-3xl font-inter font-bold max-md:text-2xl" id="papper"></p>
+                <a href="#about" class="mt-6 inline-flex items-center gap-2 rounded-full
+         border border-orange-300/50 px-5 py-2.5
+         text-sm font-medium text-orange-300
+         transition-all duration-300
+         hover:bg-orange-300 hover:text-emerald-950
+         hover:-translate-y-1">
+                    Explore More
+                    <span aria-hidden="true">↓</span>
+                </a>
             </div>
         </div>
     </div>
-    <div class="h-screen">
-
+    <div class="h-screen flex items-center " id="about">
+        <div class="w-[45%] ml-6 max-md:w-full max-md:text-center max-md:ml-0">
+            <p class="text-orange-300 font-semibold font-manrope text-2xl">
+                Hi! I'm Ahmad Zhafran, a student at SMK Negeri 5 Telkom Banda Aceh. I'm a J-pop enthusiast who loves
+                gaming and exploring the world of programming. I'm always curious to learn new things and build
+                something interesting.
+            </p>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

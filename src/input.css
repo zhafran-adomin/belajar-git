@@ -9,6 +9,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'inter';
   src: url('../font/Inter-VariableFont_wght.ttf') format('woff2');
@@ -16,6 +17,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'manrope';
   src: url('../font/Manrope-VariableFont_wght.ttf') format('woff2');
@@ -23,6 +25,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'sora';
   src: url('../font/Sora-VariableFont_wght.ttf') format('woff2');
@@ -36,4 +39,25 @@
   --font-inter: 'inter', sans-serif;
   --font-manrope: 'manrope', sans-serif;
   --font-sora: 'sora', sans-serif;
+
+
+
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+  
+}
+
+.hero-fade {
+  animation: fade-out  linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0px 300px;
 }

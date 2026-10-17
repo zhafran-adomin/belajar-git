@@ -44,3 +44,4 @@ const typingEffect = setInterval(() => {
         }
     }
 }, 100);
+
