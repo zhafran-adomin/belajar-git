@@ -1,4 +1,5 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -7,10 +8,32 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-900: oklch(21% 0.034 264.665);
-    --color-white: #fff;
+    --color-orange-300: oklch(83.7% 0.128 66.29);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-green-800: oklch(44.8% 0.119 151.328);
+    --color-emerald-600: oklch(59.6% 0.145 163.225);
+    --color-emerald-700: oklch(50.8% 0.118 165.612);
+    --color-emerald-800: oklch(43.2% 0.095 166.913);
+    --color-emerald-900: oklch(37.8% 0.077 168.94);
+    --spacing: 0.25rem;
+    --container-2xl: 42rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-cinzel: 'cinzel', serif;
+    --font-inter: 'inter', sans-serif;
+    --font-manrope: 'manrope', sans-serif;
+    --font-sora: 'sora', sans-serif;
   }
 }
 @layer base {
@@ -162,10 +185,213 @@
   }
 }
 @layer utilities {
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
   }
-  .text-white {
-    color: var(--color-white);
+  .m-18 {
+    margin: calc(var(--spacing) * 18);
+  }
+  .m-24 {
+    margin: calc(var(--spacing) * 24);
+  }
+  .m-36 {
+    margin: calc(var(--spacing) * 36);
+  }
+  .m-44 {
+    margin: calc(var(--spacing) * 44);
+  }
+  .m-46 {
+    margin: calc(var(--spacing) * 46);
+  }
+  .m-52 {
+    margin: calc(var(--spacing) * 52);
+  }
+  .m-56 {
+    margin: calc(var(--spacing) * 56);
+  }
+  .m-64 {
+    margin: calc(var(--spacing) * 64);
+  }
+  .m-96 {
+    margin: calc(var(--spacing) * 96);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+  .mt-56 {
+    margin-top: calc(var(--spacing) * 56);
+  }
+  .mt-62 {
+    margin-top: calc(var(--spacing) * 62);
+  }
+  .mt-64 {
+    margin-top: calc(var(--spacing) * 64);
+  }
+  .mt-96 {
+    margin-top: calc(var(--spacing) * 96);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-39 {
+    margin-bottom: calc(var(--spacing) * 39);
+  }
+  .mb-96 {
+    margin-bottom: calc(var(--spacing) * 96);
+  }
+  .flex {
+    display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-emerald-800 {
+    background-color: var(--color-emerald-800);
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .pb-48 {
+    padding-bottom: calc(var(--spacing) * 48);
+  }
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-amber-200 {
+    color: var(--color-amber-200);
+  }
+  .text-orange-300 {
+    color: var(--color-orange-300);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  @media (width < 48rem) {
+    .max-md\:m-12 {
+      margin: calc(var(--spacing) * 12);
+    }
+    .max-md\:m-36 {
+      margin: calc(var(--spacing) * 36);
+    }
+    .max-md\:mt-0 {
+      margin-top: 0px;
+    }
+    .max-md\:items-center {
+      align-items: center;
+    }
+    .max-md\:justify-center {
+      justify-content: center;
+    }
+    .max-md\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+    .max-md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  @media (width < 40rem) {
+    .max-sm\:m-0 {
+      margin: 0px;
+    }
+  }
+}
+@font-face {
+  font-family: 'cinzel';
+  src: url('../font/Cinzel-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'inter';
+  src: url('../font/Inter-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'manrope';
+  src: url('../font/Manrope-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'sora';
+  src: url('../font/Sora-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
   }
 }

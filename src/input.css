@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+
+
+@font-face {
+  font-family: 'cinzel';
+  src: url('../font/Cinzel-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'inter';
+  src: url('../font/Inter-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'manrope';
+  src: url('../font/Manrope-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'sora';
+  src: url('../font/Sora-VariableFont_wght.ttf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-cinzel: 'cinzel', serif;
+  --font-inter: 'inter', sans-serif;
+  --font-manrope: 'manrope', sans-serif;
+  --font-sora: 'sora', sans-serif;
+}
