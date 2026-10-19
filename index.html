@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="bg-emerald-800 bg-fixed ">
+<body class="bg-[#0B3D2E] bg-fixed mt-6">
+    <div class="flex justify-center" >
+        <nav class="fixed" id="fixed">
+            <ul class="flex  bg-amber-200 rounded-3xl">
+                <li class="font-inter rounded-bl-3xl rounded-tl-3xl cursor-pointer p-3 text-6xs font-semibold text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">home</li>
+                <li class="font-inter p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">about</li>
+                <li class="font-inter p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">works</li>
+                <li class="font-inter rounded-br-3xl rounded-tr-3xl p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">skill</li>
+            </ul>
+        </nav>
+    </div>
     <div id="hero">
         <div class="h-screen flex justify-center items-center flex-col ">
             <div class="w-[40%] max-md:w-full max-md:ml-12 hero-fade fixed" id="fixed">
@@ -27,13 +37,37 @@
             </div>
         </div>
     </div>
-    <div class="h-screen flex items-center " id="about">
-        <div class="w-[45%] ml-6 max-md:w-full max-md:text-center max-md:ml-0">
-            <p class="text-orange-300 font-semibold font-inter text-2xl">
-                Hi! I'm Ahmad Zhafran, a student at SMK Negeri 5 Telkom Banda Aceh. I'm a J-pop enthusiast who loves
-                gaming and exploring the world of programming. I'm always curious to learn new things and build
-                something interesting.
-            </p>
+    <div class="h-screen flex items-center  p-2 gap-38 max-md:gap-0" id="about">
+        <div class="w-[45%] ml-12 max-md:w-full flex flex-col gap-6 max-md:ml-0">
+            <div>
+                <h1 class="text-amber-200  border-b-[0.1px] border-orange-300 font-cinzel  p-2 font-bold text-5xl max-md:text-4xl">
+                    About Myself.
+                </h1>
+            </div>
+            <div>
+                <p class="text-white font-inter text-xl ">
+                    Hi! I'm Ahmad Zhafran, a student at SMK Negeri 5 Telkom Banda Aceh. I'm a J-pop enthusiast who loves
+                    gaming and exploring the world of programming. I'm always curious to learn new things and build
+                    something interesting.
+                </p>
+            </div>
+            <div class="flex mt-6 gap-4 justify-center">
+                <div class="flex items-center gap-3 max-md:gap-0.5 border-r-[0.001px]  max-md:flex-col pr-4 pl-4 border-amber-800">
+                    <img src="./icon/gamepad-2.png" alt="" width="40rem">
+                    <p class="text-white font-light ">Gaming</p>
+                </div>
+                <div class="flex items-center gap-3 max-md:gap-0.5 border-r-[0.001px]  max-md:flex-col pr-4 pl-4 border-amber-800">
+                    <img src="./icon/music.png" alt="" width="40rem">
+                    <p class="text-white font-light ">J-pop</p>
+                </div>
+                <div class="flex items-center gap-3 max-md:gap-0.5   max-md:flex-col pr-4 pl-4 border-amber-800">
+                    <img src="./icon/code-xml.png" alt="" width="40rem">
+                    <p class="text-white font-light ">programing</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="icon/32be3376-7bf4-4230-aa02-b288b73c911a.png" alt="" width="580"  class=" rounded-xl object-cover max-md:hidden">
         </div>
     </div>
     <script src="main.js"></script>

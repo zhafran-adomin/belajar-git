@@ -1,8 +1,7 @@
 const daftarKata = [
     'welcome! to my portfolio',
-    'web developer.',
-    'student ',
-    'ADOmin'
+    "i'm a web developer.",
+    "i'm a student."
 ];
 
 let kataIndeks = 0; 
