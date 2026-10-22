@@ -9,20 +9,43 @@
 </head>
 
 <body class="bg-[#0B3D2E] bg-fixed mt-6">
-    <div class="flex justify-center" >
+
+    <!-- nav -->
+
+    <div class="flex justify-center">
         <nav class="fixed" id="fixed">
             <ul class="flex  bg-amber-200 rounded-3xl">
-                <li class="font-inter rounded-bl-3xl rounded-tl-3xl cursor-pointer p-3 text-6xs font-semibold text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">home</li>
-                <li class="font-inter p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">about</li>
-                <li class="font-inter p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">works</li>
-                <li class="font-inter rounded-br-3xl rounded-tr-3xl p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">skill</li>
+                <a href="#home">
+                    <li
+                        class="font-inter rounded-bl-3xl rounded-tl-3xl cursor-pointer p-3 text-6xs font-semibold text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">
+                        home</li>
+                </a>
+                <a href="#about">
+                    <li
+                        class="font-inter p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">
+                        about</li>
+                </a>
+                <a href="#works">
+
+                    <li
+                        class="font-inter p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">
+                        works</li>
+                </a>
+                <a href="#skill">
+                    <li
+                        class="font-inter rounded-br-3xl rounded-tr-3xl p-3 text-6xs font-semibold cursor-pointer text-emerald-800 hover:bg-emerald-800 hover:text-amber-200 transition-all duration-300 ease-in-out ">
+                        skill</li>
+                </a>
             </ul>
         </nav>
     </div>
-    <div id="hero">
+
+    <!-- hero/home -->
+
+    <div id="home">
         <div class="h-screen flex justify-center items-center flex-col ">
-            <div class="w-[40%] max-md:w-full max-md:ml-12 hero-fade fixed" id="fixed">
-                <h1 class="text-amber-200 font-cinzel font-bold  text-5xl max-md:text-3xl">HI THERE! my name is Zhafran
+            <div class="w-[40%] max-md:w-full max-md:ml-12 hero-fade md:fixed" id="fixed">
+                <h1 class="text-amber-200 font-cinzel  font-bold  text-5xl max-md:text-3xl">HI THERE! my name is Zhafran
                 </h1>
                 <p class="text-orange-300 text-3xl font-inter font-bold max-md:text-2xl" id="papper"></p>
                 <a href="#about" class="mt-6 inline-flex items-center gap-2 rounded-full
@@ -37,10 +60,14 @@
             </div>
         </div>
     </div>
+
+    <!-- about -->
+
     <div class="h-screen flex items-center  p-2 gap-38 max-md:gap-0" id="about">
         <div class="w-[45%] ml-12 max-md:w-full flex flex-col gap-6 max-md:ml-0">
             <div>
-                <h1 class="text-amber-200  border-b-[0.1px] border-orange-300 font-cinzel  p-2 font-bold text-5xl max-md:text-4xl">
+                <h1
+                    class="text-amber-200  border-b-[0.1px] border-orange-300 font-cinzel  p-2 font-bold text-5xl max-md:text-4xl">
                     About Myself.
                 </h1>
             </div>
@@ -52,11 +79,13 @@
                 </p>
             </div>
             <div class="flex mt-6 gap-4 justify-center">
-                <div class="flex items-center gap-3 max-md:gap-0.5 border-r-[0.001px]  max-md:flex-col pr-4 pl-4 border-amber-800">
+                <div
+                    class="flex items-center gap-3 max-md:gap-0.5 border-r-[0.001px]  max-md:flex-col pr-4 pl-4 border-amber-800">
                     <img src="./icon/gamepad-2.png" alt="" width="40rem">
                     <p class="text-white font-light ">Gaming</p>
                 </div>
-                <div class="flex items-center gap-3 max-md:gap-0.5 border-r-[0.001px]  max-md:flex-col pr-4 pl-4 border-amber-800">
+                <div
+                    class="flex items-center gap-3 max-md:gap-0.5 border-r-[0.001px]  max-md:flex-col pr-4 pl-4 border-amber-800">
                     <img src="./icon/music.png" alt="" width="40rem">
                     <p class="text-white font-light ">J-pop</p>
                 </div>
@@ -67,10 +96,178 @@
             </div>
         </div>
         <div>
-            <img src="icon/32be3376-7bf4-4230-aa02-b288b73c911a.png" alt="" width="580"  class=" rounded-xl object-cover max-md:hidden">
+            <img src="icon/32be3376-7bf4-4230-aa02-b288b73c911a.png" alt="" width="580"
+                class=" rounded-xl object-cover max-md:hidden">
         </div>
     </div>
-    <script src="main.js"></script>
+
+    <!-- skill -->
+
+    <div id="skill" class="h-100% flex gap-6 flex-col justify-center">
+        <div class="m-8  w-1/4 max-md:w-1/2 ">
+            <h1 class="text-amber-200 font-cinzel font-bold  text-5xl ">My Skills
+            </h1>
+            <p class="text-white font-inter  text-xl max-md:text-[14px]">
+                tools and technologies that i've use and  currently learning to improve my skill
+            </p>
+        </div>
+        <div class="grid grid-cols-3 max-md:grid-cols-1  gap-7 place-items-center">
+
+            <!-- card skill -->
+
+            <div class="p-3.5 w-85 h-37 flex flex-col gap-3.5 border-gray-400 border">
+                <div class="flex gap-8 items-center">
+                    <img src="./icon/html.png" alt="" width="57rem">
+                    <h3 class="font-cinzel font-bold text-xl text-amber-100">HTML</h3>
+                </div>
+                <div class="relative h-1 rounded-full bg-emerald-900">
+
+                    
+                    <div class="h-full w-full rounded-full bg-[#D9361E]"></div>
+
+                    <div class="absolute left-full top-1/2
+                size-3 -translate-x-1/2 -translate-y-1/2
+                rounded-full border-2 border-[#F4E6A1]
+                bg-[#0B3D2E]">
+                    </div>
+
+                </div>
+                <div class="mt-3 flex justify-between text-xs text-[#C8C8B8]">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </div>
+
+            <div class="p-3.5 w-85 h-37 flex flex-col gap-3.5 border-gray-400 border">
+                <div class="flex gap-8 items-center">
+                    <img src="./icon/html.png" alt="" width="57rem">
+                    <h3 class="font-cinzel font-bold text-xl text-amber-100">HTML</h3>
+                </div>
+                <div class="relative h-1 rounded-full bg-emerald-900">
+
+                    
+                    <div class="h-full w-full rounded-full bg-[#D9361E]"></div>
+
+                    <div class="absolute left-full top-1/2
+                size-3 -translate-x-1/2 -translate-y-1/2
+                rounded-full border-2 border-[#F4E6A1]
+                bg-[#0B3D2E]">
+                    </div>
+
+                </div>
+                <div class="mt-3 flex justify-between text-xs text-[#C8C8B8]">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </div>
+
+            <div class="p-3.5 w-85 h-37 flex flex-col gap-3.5 border-gray-400 border">
+                <div class="flex gap-8 items-center">
+                    <img src="./icon/html.png" alt="" width="57rem">
+                    <h3 class="font-cinzel font-bold text-xl text-amber-100">HTML</h3>
+                </div>
+                <div class="relative h-1 rounded-full bg-emerald-900">
+
+                    
+                    <div class="h-full w-full rounded-full bg-[#D9361E]"></div>
+
+                    <div class="absolute left-full top-1/2
+                size-3 -translate-x-1/2 -translate-y-1/2
+                rounded-full border-2 border-[#F4E6A1]
+                bg-[#0B3D2E]">
+                    </div>
+
+                </div>
+                <div class="mt-3 flex justify-between text-xs text-[#C8C8B8]">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </div>
+
+            <div class="p-3.5 w-85 h-37 flex flex-col gap-3.5 border-gray-400 border">
+                <div class="flex gap-8 items-center">
+                    <img src="./icon/html.png" alt="" width="57rem">
+                    <h3 class="font-cinzel font-bold text-xl text-amber-100">HTML</h3>
+                </div>
+                <div class="relative h-1 rounded-full bg-emerald-900">
+
+                    
+                    <div class="h-full w-full rounded-full bg-[#D9361E]"></div>
+
+                    <div class="absolute left-full top-1/2
+                size-3 -translate-x-1/2 -translate-y-1/2
+                rounded-full border-2 border-[#F4E6A1]
+                bg-[#0B3D2E]">
+                    </div>
+
+                </div>
+                <div class="mt-3 flex justify-between text-xs text-[#C8C8B8]">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </div>
+
+            <div class="p-3.5 w-85 h-37 flex flex-col gap-3.5 border-gray-400 border">
+                <div class="flex gap-8 items-center">
+                    <img src="./icon/html.png" alt="" width="57rem">
+                    <h3 class="font-cinzel font-bold text-xl text-amber-100">HTML</h3>
+                </div>
+                <div class="relative h-1 rounded-full bg-emerald-900">
+
+                    
+                    <div class="h-full w-full rounded-full bg-[#D9361E]"></div>
+
+                    <div class="absolute left-full top-1/2
+                size-3 -translate-x-1/2 -translate-y-1/2
+                rounded-full border-2 border-[#F4E6A1]
+                bg-[#0B3D2E]">
+                    </div>
+
+                </div>
+                <div class="mt-3 flex justify-between text-xs text-[#C8C8B8]">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </div>
+
+            <div class="p-3.5 w-85 h-37 flex flex-col gap-3.5 border-gray-400 border">
+                <div class="flex gap-8 items-center">
+                    <img src="./icon/html.png" alt="" width="57rem">
+                    <h3 class="font-cinzel font-bold text-xl text-amber-100">HTML</h3>
+                </div>
+                <div class="relative h-1 rounded-full bg-emerald-900">
+
+                    
+                    <div class="h-full w-full rounded-full bg-[#D9361E]"></div>
+
+                    <div class="absolute left-full top-1/2
+                size-3 -translate-x-1/2 -translate-y-1/2
+                rounded-full border-2 border-[#F4E6A1]
+                bg-[#0B3D2E]">
+                    </div>
+
+                </div>
+                <div class="mt-3 flex justify-between text-xs text-[#C8C8B8]">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- works -->
+
+    <div class="h-screen">
+
+    </div>
+        <script src="main.js"></script>
 </body>
 
 </html>
